@@ -1,0 +1,37 @@
+# Ignore Node modules
+node_modules/
+
+# Ignore build output
+.next/
+
+# Ignore development server logs
+/.next-server/
+
+# Ignore environment variables
+.env
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.iml
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore test coverage reports
+coverage/
+
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore miscellaneous files
+.DS_Store
+Thumbs.db
