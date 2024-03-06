@@ -7,7 +7,7 @@ import {
 
 export function AccordionInfo() {
   return (
-    <Accordion type="single" collapsible className="w-full dark:invert my-16">
+    <Accordion type="single" collapsible className="w-full dark:invert my-12">
 
       <AccordionItem value="item-4">
         <AccordionTrigger>WHY?</AccordionTrigger>
