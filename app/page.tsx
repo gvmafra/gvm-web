@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex flex-col md:flex-row h-auto md:h-screen items-center justify-between">
       {/* BOPPING GVM */}
-      <div className="flex items-center justify-center md:m-24 shadow-2xl mt-14 rounded-3xl dark:invert w-full h-[75vh] md:w-[80vw] md:h-[80vh] md:left-24 md:min-h-2.5">
+      <div className="flex items-center justify-center md:m-24 shadow-[0_20px_30px_4px_rgb(0,0,0,0.4)] md:shadow-[0_0_30px_2px_rgb(0,0,0,0.4)] rounded-3xl dark:invert w-full h-[75vh] md:w-[80vw] md:h-[80vh] md:left-24 md:min-h-2.5">
         <div className="flex flex-wrap w-2/6 max-w-44 min-w-20 h-auto">
           <Image
             src="/images/gvm_logo.svg"
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       {/* SIDEBAR */}
-      <div className="flex flex-col justify-between dark:invert shadow-xl w-full md:w-[20vw] md:h-screen p-4">
+      <div className="flex flex-col justify-between dark:invert md:shadow-[-4px_0_30px_1px_rgb(0,0,0,0.4)] w-full md:w-[20vw] md:h-screen p-4">
 
         <div className="flex items-center justify-center w-full dark:invert md:h-48 bg-secondary rounded-lg" />
 
