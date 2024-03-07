@@ -8,33 +8,41 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <main className="flex flex-col md:flex-row h-auto md:h-screen items-center justify-between">
+
       {/* BOPPING GVM */}
-      <div className="flex items-center justify-center md:m-24 shadow-[0_20px_30px_4px_rgb(0,0,0,0.4)] md:shadow-[0_0_30px_2px_rgb(0,0,0,0.4)] rounded-3xl dark:invert w-full h-[75vh] md:w-[80vw] md:h-[80vh] md:left-24 md:min-h-2.5">
-        <div className="flex flex-wrap w-2/6 max-w-44 min-w-20 h-auto">
-          <Image
-            src="/images/gvm_logo.svg"
-            alt="gvm logo"
-            className="w-auto h-auto"
-            width={200}
-            height={200}
-            priority
-          />
+      <div className="w-full h-full md:p-20">
+        <div className="flex w-full h-full min-h-[600px] md:min-h-max items-center justify-center md:rounded-2xl dark:invert shadow-[0_20px_30px_4px_rgb(0,0,0,0.4)] md:shadow-[0_0_15px_2px_rgb(0,0,0,0.4)]">
+          <div className="w-2/6 max-w-44 min-w-20">
+            <Image
+              src="/images/gvm_logo.svg"
+              alt="gvm logo"
+              className="w-auto h-auto"
+              width={200}
+              height={200}
+              priority
+            />
+          </div>
         </div>
       </div>
 
       {/* SIDEBAR */}
-      <div className="flex flex-col justify-between dark:invert md:shadow-[-4px_0_30px_1px_rgb(0,0,0,0.4)] w-full md:w-[20vw] md:h-screen p-4">
+      <div className="flex flex-col justify-center dark:invert md:shadow-[0_0_15px_2px_rgb(0,0,0,0.4)] w-full md:w-[20vw] min-w-[300px] md:h-screen p-6 py-6 md:py-20">
+        <div className="flex flex-col justify-between h-full">
+          {/* <div className="flex items-center justify-center w-full dark:invert md:shadow-[0_0_4px_1px_rgb(0,0,0,0.2)] md:h-[24vh] rounded-lg" /> */}
 
-        <div className="flex items-center justify-center w-full dark:invert md:h-48 bg-secondary rounded-lg" />
+          <AccordionInfo />
 
-        <AccordionInfo />
+          <div className="flex items-center md:p-0 justify-between w-full h-auto rounded-lg dark:invert gap-6">
+            <Button variant={"outline"} className="flex-grow">
+              Click me
+            </Button>
+            <ModeToggle />
+          </div>
 
-        <div className="flex items-center justify-between w-full h-auto rounded-lg dark:invert gap-2">
-          <Button variant={"outline"}>Click me</Button>
-          <ModeToggle />
+          <div className="h-6 md:h-0 md:hidden" />
         </div>
-
       </div>
+
     </main>
   );
 }
