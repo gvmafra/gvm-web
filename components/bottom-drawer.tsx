@@ -16,28 +16,19 @@ export function DrawerDemo() {
 
   return (
     <Drawer>
+
       <DrawerTrigger asChild>
-        <Button variant="outline">Open Drawer</Button>
+        <Button variant="outline" className="flex-grow">Testing...</Button>
       </DrawerTrigger>
+
       <DrawerContent>
-        <div className="mx-auto w-full max-w-sm">
+        <div className="mx-auto py-4 w-full max-w-sm">
           <DrawerHeader>
-            <DrawerTitle>Move Goal</DrawerTitle>
-            <DrawerDescription>Set your daily activity goal.</DrawerDescription>
+            <DrawerTitle className="text-center">Under construction.</DrawerTitle>
+            <DrawerDescription className="text-center"></DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0">
-            <div className="flex items-center justify-center space-x-2">
 
-              <div className="flex-1 text-center">
-                <div className="text-[0.70rem] uppercase text-muted-foreground">
-                  Calories/day
-                </div>
-              </div>
-
-            </div>
-          </div>
           <DrawerFooter>
-            <Button>Submit</Button>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>
