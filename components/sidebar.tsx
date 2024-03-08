@@ -27,9 +27,10 @@ export function AccordionInfo() {
         </AccordionContent>
         <AccordionContent className="mb-6">
           Now, <span className="font-bold">I am a software developer.</span>{" "}
-          Although I&apos;ve worked in the Architecture and Design industry for
-          a few years. I also do illustrative &{" "}
-          <span className="font-bold">graphic design</span> work on the side.
+          Although I&apos;ve worked in the Architecture and design industry for
+          a few years. I also do{" "}
+          <span className="font-bold">illustrative & creative</span> work on the
+          side.
         </AccordionContent>
       </AccordionItem>
 
@@ -48,66 +49,106 @@ export function AccordionInfo() {
       </AccordionItem>
 
       <AccordionItem value="item-3">
-        <AccordionTrigger>WORK</AccordionTrigger>
+        <AccordionTrigger>DEV WORK</AccordionTrigger>
         <AccordionContent className="my-6">
           <div className="flex items-center justify-between">
             <Link href="https://www.sociable.how/">
-              <Button variant="link" className="w-full">
+              <Button variant="default" className="w-[110px]">
                 Sociable AI
               </Button>
             </Link>
-            <p className="p-4 text-right ">Frontend | UI</p>
+            <p className="p-4 w-full text-center font-thin">(Frontend | UI)</p>
           </div>
 
           <div className="flex items-center justify-between">
             <Link href="https://mgamesjogosmatematicos.itch.io/fratix">
-              <Button variant="link" className="w-full">
+              <Button variant="default" className="w-[110px]">
                 Fratix
               </Button>
             </Link>
-            <p className="p-4 text-right ">Fullstack</p>
+            <p className="p-4 w-full text-center font-thin">(Fullstack)</p>
           </div>
 
           <div className="flex items-center justify-between">
             <Link href="https://www.rootsafrica.org/">
-              <Button variant="link" className="w-full">
+              <Button variant="default" className="w-[110px]">
                 Roots Africa
               </Button>
             </Link>
-            <p className="p-4 text-right ">Web Design</p>
+            <p className="p-4 w-full text-center font-thin">(Web Design)</p>
           </div>
         </AccordionContent>
       </AccordionItem>
 
       <AccordionItem value="item-4">
+        <AccordionTrigger>OTHER WORK</AccordionTrigger>
+        <AccordionContent className="my-6">
+          <div className="flex items-center justify-between">
+            <Link href="https://www.donnyankri.com/">
+              <Button variant="default" className="w-[110px]">
+                DAA
+              </Button>
+            </Link>
+            <p className="p-4 w-full text-center font-thin">(Arch. Design)</p>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <Link href="https://www.sotopllc.com/">
+              <Button variant="default" className="w-[110px]">
+                SOTO
+              </Button>
+            </Link>
+            <p className="p-4 w-full text-center font-thin">(Arch. Intern)</p>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <Button variant="default" className="w-[110px]">
+              Link Design
+            </Button>
+            <p className="p-4 w-full text-center font-thin">(Graphic Design)</p>
+          </div>
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem value="item-5">
         <AccordionTrigger>WHERE I AM</AccordionTrigger>
         <AccordionContent className="mt-6">
-          I currently reside in the city of <span className="font-bold">São Paulo</span>, Brazil. I&apos;m open to new opportunities and challenges.
+          I currently in the beautiful city of{" "}
+          <span className="font-bold">São Paulo</span>, Brazil. I&apos;m open to
+          new opportunities and challenges.
         </AccordionContent>
 
         <AccordionContent>
-          I&apos;m also open to <span className="font-bold">freelance work</span> and collaborations. Feel free to reach out.
+          I&apos;m also open to{" "}
+          <span className="font-bold">freelance work</span> and collaborations.
+          Feel free to reach out.
         </AccordionContent>
 
         <AccordionContent>
           You can find me on:
           <div className="grid grid-cols-2 my-6 gap-4">
-
-          <Link href="https://www.linkedin.com/in/gabrielversianimafra/">
-            <Button variant="link" className="w-full">LinkedIn</Button>
-          </Link>
-          <Link href="https://github.com/gvmafra">
-            <Button variant="link" className="w-full">GitHub</Button>
-          </Link>
-          <Link href="https://twitter.com/home">
-            <Button variant="link" className="w-full">Twitter (X)</Button>
-          </Link>
-          <Link href="https://www.instagram.com/gvmafra/">
-            <Button variant="link" className="w-full">Instagram</Button>
-          </Link>
+            <Link href="https://www.linkedin.com/in/gabrielversianimafra/">
+              <Button variant="default" className="w-full">
+                LinkedIn
+              </Button>
+            </Link>
+            <Link href="https://github.com/gvmafra">
+              <Button variant="default" className="w-full">
+                GitHub
+              </Button>
+            </Link>
+            <Link href="https://twitter.com/home">
+              <Button variant="default" className="w-full">
+                Twitter (X)
+              </Button>
+            </Link>
+            <Link href="https://www.instagram.com/gvmafra/">
+              <Button variant="default" className="w-full">
+                Instagram
+              </Button>
+            </Link>
           </div>
         </AccordionContent>
-
       </AccordionItem>
     </Accordion>
   );
