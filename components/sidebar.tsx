@@ -35,7 +35,7 @@ export function AccordionInfo() {
       </AccordionItem>
 
       <AccordionItem value="item-2">
-        <AccordionTrigger>WHY THOUGH</AccordionTrigger>
+        <AccordionTrigger>WHY</AccordionTrigger>
         <AccordionContent className="mt-6">
           I created this website in order to showcase and{" "}
           <span className="font-bold">play around</span> with a few ideas. I
@@ -44,12 +44,12 @@ export function AccordionInfo() {
 
         <AccordionContent className="mb-6">
           I also wanted to pay homage to my trajectory along the years. Needless
-          to say, it&apos;s a work in progress.
+          to say, <span className="font-bold">it&apos;s a work in progress</span>.
         </AccordionContent>
       </AccordionItem>
 
       <AccordionItem value="item-3">
-        <AccordionTrigger>DEV WORK</AccordionTrigger>
+        <AccordionTrigger>WORK</AccordionTrigger>
         <AccordionContent className="my-6">
           <div className="flex items-center justify-between">
             <Link href="https://www.sociable.how/">
@@ -77,12 +77,7 @@ export function AccordionInfo() {
             </Link>
             <p className="p-4 w-full text-center font-thin">(Web Design)</p>
           </div>
-        </AccordionContent>
-      </AccordionItem>
 
-      <AccordionItem value="item-4">
-        <AccordionTrigger>OTHER WORK</AccordionTrigger>
-        <AccordionContent className="my-6">
           <div className="flex items-center justify-between">
             <Link href="https://www.donnyankri.com/">
               <Button variant="default" className="w-[110px]">
@@ -110,8 +105,8 @@ export function AccordionInfo() {
         </AccordionContent>
       </AccordionItem>
 
-      <AccordionItem value="item-5">
-        <AccordionTrigger>WHERE I AM</AccordionTrigger>
+      <AccordionItem value="item-4">
+        <AccordionTrigger>FIND ME</AccordionTrigger>
         <AccordionContent className="mt-6">
           I currently in the beautiful city of{" "}
           <span className="font-bold">São Paulo</span>, Brazil. I&apos;m open to
