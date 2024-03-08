@@ -8,10 +8,14 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 export function AccordionInfo() {
+
+  // The initial state of the accordion is to have item-1 triggered, and the others not.
+
   return (
     <Accordion
       type="single"
       collapsible
+      defaultValue="item-1"
       className="w-full dark:invert mt-12 mb-12 md:mt-0"
     >
       <AccordionItem value="item-1">
