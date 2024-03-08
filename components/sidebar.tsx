@@ -21,7 +21,7 @@ export function AccordionInfo() {
       <AccordionItem value="item-1">
         <AccordionTrigger>ABOUT ME</AccordionTrigger>
         <AccordionContent className="mt-6">
-          Hey there. My name is <span className="font-bold">Gabriel</span>.
+          Hey there. My name is <span className="font-bold"> Gabriel </span>.
         </AccordionContent>
         <AccordionContent>
           I&apos;m a Brazilian who has lived in the United States for over 10
