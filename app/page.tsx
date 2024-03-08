@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { AccordionInfo } from "@/components/sidebar";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
@@ -23,17 +22,11 @@ export default function Home() {
       {/* SIDEBAR */}
       <div className="flex flex-col justify-center dark:invert md:shadow-[0_0_15px_2px_rgb(0,0,0,0.4)] w-full md:w-[20vw] min-w-[300px] md:h-screen p-6 py-6 md:py-20">
         <div className="flex flex-col justify-between h-full">
-          {/* <div className="flex items-center justify-center w-full dark:invert md:shadow-[0_0_4px_1px_rgb(0,0,0,0.2)] md:h-[24vh] rounded-lg" /> */}
 
           <AccordionInfo />
 
           <div className="flex items-center md:p-0 justify-between w-full h-auto rounded-lg dark:invert gap-6">
-            {/* <Button variant={"outline"} className="flex-grow">
-              Click me
-            </Button> */}
-
               <DrawerDemo />
-
             <ModeToggle />
           </div>
 

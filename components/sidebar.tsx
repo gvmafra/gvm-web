@@ -91,7 +91,7 @@ export function AccordionInfo() {
 
         <AccordionContent>
           You can find me on:
-          <div className="grid grid-cols-2 my-6">
+          <div className="grid grid-cols-2 my-6 gap-4">
 
           <Link href="https://www.linkedin.com/in/gabrielversianimafra/">
             <Button variant="link" className="w-full">LinkedIn</Button>
