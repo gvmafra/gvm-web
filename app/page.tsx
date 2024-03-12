@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex flex-col md:flex-row h-auto md:h-screen items-center justify-between">
       {/* BOPPING GVM */}
       <div className="w-full h-full md:p-20 md:px-40">
-        <div className="flex w-full h-full min-h-[600px] md:min-h-max items-center justify-center md:rounded-2xl dark:invert shadow-[0_10px_15px_2px_rgb(0,0,0,0.4)] dark:shadow-[inset_0_0px_20px_5px_rgb(0,0,0,0.4)] md:shadow-[0_0_15px_2px_rgb(0,0,0,0.5)] md:dark:shadow-[inset_0_0_15px_2px_rgb(0,0,0,0.5)]">
+        <div className="flex w-full h-full min-h-[600px] md:min-w-64 md:min-h-64 items-center justify-center md:rounded-2xl dark:invert shadow-[0_10px_15px_2px_rgb(0,0,0,0.4)] dark:shadow-[inset_0_0px_20px_5px_rgb(0,0,0,0.4)] md:shadow-[0_0_15px_2px_rgb(0,0,0,0.5)] md:dark:shadow-[inset_0_0_15px_2px_rgb(0,0,0,0.5)]">
           <div className="flex w-full h-[600px] md:h-full">
             <DvdBouncer />
           </div>

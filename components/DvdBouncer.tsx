@@ -10,6 +10,7 @@ const AnimatedLogo = () => {
   let xSpeed = 4;
   let ySpeed = 4;
 
+  //  Control the animation loop
   useEffect(() => {
     const interval = setInterval(moveLogo, 1000 / FPS);
     window.addEventListener("resize", onWindowResize);
@@ -50,9 +51,23 @@ const AnimatedLogo = () => {
     }
   };
 
+  // Keep the logo within the window bounds
+  // If the window is resized, the logo will be repositioned
+  // to fit within the new window size
   const onWindowResize = () => {
-    xPosition = 10;
-    yPosition = 10;
+    const logo = logoRef.current;
+    const section = sectionRef.current;
+    if (!logo || !section) return;
+
+    const maxX = section.clientWidth - logo.clientWidth;
+    const maxY = section.clientHeight - logo.clientHeight;
+    if (xPosition >= maxX) {
+      xPosition = maxX;
+    }
+    if (yPosition >= maxY) {
+      yPosition = maxY;
+    }
+    updateLogoPosition();
   };
 
   const randomColor = () => {
@@ -96,3 +111,7 @@ const AnimatedLogo = () => {
 };
 
 export default AnimatedLogo;
+
+/*
+
+*/
