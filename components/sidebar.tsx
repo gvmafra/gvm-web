@@ -42,7 +42,7 @@ export function AccordionInfo() {
           content as time goes by.
         </AccordionContent>
         <AccordionContent>
-          it is a<span className="font-bold">{" "}work in progress</span>.
+          It is a<span className="font-bold">{" "}work in progress</span>.
         </AccordionContent>
       </AccordionItem>
 
