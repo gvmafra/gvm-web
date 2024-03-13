@@ -8,7 +8,6 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 
 export function AccordionInfo() {
-
   // The initial state of the accordion is to have item-1 triggered, and the others not.
 
   return (
@@ -20,112 +19,114 @@ export function AccordionInfo() {
     >
       <AccordionItem value="item-1">
         <AccordionTrigger>ABOUT ME</AccordionTrigger>
-        <AccordionContent className="mt-6">
-          Hey there. My name is <span className="font-bold"> Gabriel </span>.
+        <AccordionContent>
+          Hey there! My name is <span className="font-bold"> Gabriel, </span>
+          and this is my portfolio website. I&apos;ve been honing my skills as a{" "}
+          <span className="font-bold">frontend developer</span> for quite a
+          while, although I worked in the Architecture and design industry for
+          the past few years.
         </AccordionContent>
         <AccordionContent>
-          I&apos;m a Brazilian who has lived in the United States for over 10
-          years. Around that time, I pursued a degree in{" "}
-          <span className="font-bold">Computer Science</span>, right after I
-          began playing with code.
-        </AccordionContent>
-        <AccordionContent className="mb-6">
-          Now, <span className="font-bold">I am a software developer.</span>{" "}
-          Although I&apos;ve worked in the Architecture and design industry for
-          a few years. I also do{" "}
-          <span className="font-bold">illustrative & creative</span> work on the
-          side.
+          I also do <span className="font-bold">illustrative & creative</span>{" "}
+          work. The &quot;bopping&quot; logo you see on the left was created by
+          me, along with many others.
         </AccordionContent>
       </AccordionItem>
 
       <AccordionItem value="item-2">
         <AccordionTrigger>WHY</AccordionTrigger>
-        <AccordionContent className="mt-6">
+        <AccordionContent>
           I created this website in order to showcase and{" "}
-          <span className="font-bold">play around</span> with a few ideas. I
-          will be adding more content as time goes by.
+          <span className="font-bold">play around</span> with a few ideas -
+          think creative coding, fun animations and else. I will be adding more
+          content as time goes by.
         </AccordionContent>
-
-        <AccordionContent className="mb-6">
-          I also wanted to pay homage to my trajectory along the years. Needless
-          to say, <span className="font-bold">it&apos;s a work in progress</span>.
+        <AccordionContent>
+          it is a<span className="font-bold">{" "}work in progress</span>.
         </AccordionContent>
       </AccordionItem>
 
       <AccordionItem value="item-3">
         <AccordionTrigger>WORK</AccordionTrigger>
-        <AccordionContent className="my-6">
-          <div className="flex items-center justify-between">
+
+        <AccordionContent>
+          Here are a few projects I&apos;ve worked on:
+        </AccordionContent>
+
+        <AccordionContent className="grid grid-cols-2 gap-3">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Link href="https://www.sociable.how/">
-              <Button variant="default" className="w-[110px]">
+              <Button variant="default" className="w-full">
                 Sociable AI
               </Button>
             </Link>
-            <p className="p-4 w-full text-center font-thin">(Frontend | UI)</p>
+            <p className="w-full text-center text-xs font-thin">
+              (Frontend | UI)
+            </p>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Link href="https://mgamesjogosmatematicos.itch.io/fratix">
               <Button variant="default" className="w-[110px]">
                 Fratix
               </Button>
             </Link>
-            <p className="p-4 w-full text-center font-thin">(Fullstack)</p>
+            <p className="w-full text-center text-xs font-thin">(Fullstack)</p>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Link href="https://www.rootsafrica.org/">
               <Button variant="default" className="w-[110px]">
                 Roots Africa
               </Button>
             </Link>
-            <p className="p-4 w-full text-center font-thin">(Web Design)</p>
+            <p className="w-full text-center text-xs font-thin">(Web Design)</p>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Link href="https://www.donnyankri.com/">
               <Button variant="default" className="w-[110px]">
                 DAA
               </Button>
             </Link>
-            <p className="p-4 w-full text-center font-thin">(Arch. Design)</p>
+            <p className="w-full text-center text-xs font-thin">
+              (Arch. Design)
+            </p>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Link href="https://www.sotopllc.com/">
               <Button variant="default" className="w-[110px]">
                 SOTO
               </Button>
             </Link>
-            <p className="p-4 w-full text-center font-thin">(Arch. Intern)</p>
+            <p className="w-full text-center text-xs font-thin">
+              (Arch. Intern)
+            </p>
           </div>
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between gap-2">
             <Button variant="default" className="w-[110px]">
               Link Design
             </Button>
-            <p className="p-4 w-full text-center font-thin">(Graphic Design)</p>
+            <p className="w-full text-center text-xs font-thin">
+              (Graphic Design)
+            </p>
           </div>
         </AccordionContent>
       </AccordionItem>
 
       <AccordionItem value="item-4">
         <AccordionTrigger>FIND ME</AccordionTrigger>
-        <AccordionContent className="mt-6">
-          I currently in the beautiful city of{" "}
-          <span className="font-bold">São Paulo</span>, Brazil. I&apos;m open to
-          new opportunities and challenges.
+        <AccordionContent>
+          I am currently in the beautiful city of{" "}
+          <span className="font-bold">São Paulo</span>, open to work. I&apos;m
+          also open to <span className="font-bold">freelance work</span> and
+          collaborations. Feel free to reach out:
         </AccordionContent>
 
         <AccordionContent>
-          I&apos;m also open to{" "}
-          <span className="font-bold">freelance work</span> and collaborations.
-          Feel free to reach out.
-        </AccordionContent>
-
-        <AccordionContent>
-          You can find me on:
-          <div className="grid grid-cols-2 my-6 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Link href="https://www.linkedin.com/in/gabrielversianimafra/">
               <Button variant="default" className="w-full">
                 LinkedIn
