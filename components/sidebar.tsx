@@ -106,9 +106,11 @@ export function AccordionInfo() {
           </div>
 
           <div className="flex flex-col items-center justify-between gap-2">
-            <Button variant="default" className="w-[110px]">
-              Link Design
-            </Button>
+          <Link href="https://www.instagram.com/cog1to/">
+              <Button variant="default" className="w-[110px]">
+                COGITO
+              </Button>
+            </Link>
             <p className="w-full text-center text-xs font-thin">
               (Graphic Design)
             </p>
@@ -137,7 +139,7 @@ export function AccordionInfo() {
                 GitHub
               </Button>
             </Link>
-            <Link href="https://twitter.com/home">
+            <Link href="https://twitter.com/CogitoGVM">
               <Button variant="default" className="w-full">
                 Twitter (X)
               </Button>
