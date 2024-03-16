@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex flex-col md:flex-row h-auto md:h-screen items-center justify-between">
       {/* BOPPING GVM */}
-      <div className="w-full md:h-full p-0.5 relative">
+      <div className="w-full md:h-full p-1 md:p-1 relative">
         <div className="flex w-full h-full min-h-[600px] md:min-w-64 md:min-h-64 items-center justify-center dark:invert">
           <div className="flex w-full h-[600px] md:h-full z-10">
             <DvdBouncer />
