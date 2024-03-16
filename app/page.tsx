@@ -10,12 +10,13 @@ export default function Home() {
   return (
     <main className="flex flex-col md:flex-row h-auto md:h-screen items-center justify-between">
       {/* BOPPING GVM */}
-      <div className="w-full h-full md:p-20 md:px-20">
-        <div className="flex w-full h-full min-h-[600px] md:min-w-64 md:min-h-64 items-center justify-center md:rounded-2xl dark:invert shadow-[0_10px_15px_2px_rgb(0,0,0,0.4)] dark:shadow-[inset_0_0px_20px_5px_rgb(0,0,0,0.4)] md:shadow-[0_0_15px_2px_rgb(0,0,0,0.5)] md:dark:shadow-[inset_0_0_15px_2px_rgb(0,0,0,0.5)]">
-          <div className="flex w-full h-[600px] md:h-full">
+      <div className="w-full md:h-full p-0.5 relative">
+        <div className="flex w-full h-full min-h-[600px] md:min-w-64 md:min-h-64 items-center justify-center dark:invert">
+          <div className="flex w-full h-[600px] md:h-full z-10">
             <DvdBouncer />
           </div>
         </div>
+        <div className="absolute bottom-0 dark:invert dark:-bottom-5 h-5 w-screen md:hidden bg-gradient-to-t from-slate-300 to-white dark:bg-gradient-to-b"/>
       </div>
 
       {/* SIDEBAR */}
@@ -32,7 +33,7 @@ export default function Home() {
         </div>
         {/* to here */}
 
-        <div className="md:absolute md:-left-3 md:w-3 md:h-screen md:opacity-30 md:bg-gradient-to-l md:from-black md:to-white dark:md:left-0 dark:md:bg-gradient-to-r" />
+        <div className="md:absolute md:-left-5 md:w-5 md:h-screen md:opacity-30 md:bg-gradient-to-l from-slate-300 md:to-white dark:md:left-0 dark:md:bg-gradient-to-r" />
       </div>
     </main>
   );

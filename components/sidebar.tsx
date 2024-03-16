@@ -20,16 +20,15 @@ export function AccordionInfo() {
       <AccordionItem value="item-1">
         <AccordionTrigger>ABOUT ME</AccordionTrigger>
         <AccordionContent>
-          Hey there! My name is <span className="font-bold"> Gabriel, </span>
-          and this is my portfolio website. I&apos;ve been honing my skills as a{" "}
-          <span className="font-bold">frontend developer</span> for quite a
-          while, although I worked in the Architecture and design industry for
-          the past few years.
+          Hey there - My name is Gabriel, and this is my portfolio website.
+        </AccordionContent>
+        <AccordionContent>
+          I am a <span className="font-bold">Frontend Developer</span> with a
+          background in <span className="font-bold">Architecture and Design</span>.
         </AccordionContent>
         <AccordionContent>
           I also do <span className="font-bold">illustrative & creative</span>{" "}
-          work. The &quot;bopping&quot; logo you see on the left was created by
-          me, along with many others.
+          work to feed my creative side.
         </AccordionContent>
       </AccordionItem>
 
@@ -38,11 +37,11 @@ export function AccordionInfo() {
         <AccordionContent>
           I created this website in order to showcase and{" "}
           <span className="font-bold">play around</span> with a few ideas -
-          think creative coding, fun animations and else. I will be adding more
+          think creative coding & motion design. I will be adding more
           content as time goes by.
         </AccordionContent>
         <AccordionContent>
-          It is a<span className="font-bold">{" "}work in progress</span>.
+          It is a<span className="font-bold"> work in progress</span>.
         </AccordionContent>
       </AccordionItem>
 
@@ -106,7 +105,7 @@ export function AccordionInfo() {
           </div>
 
           <div className="flex flex-col items-center justify-between gap-2">
-          <Link href="https://www.instagram.com/cog1to/">
+            <Link href="https://www.instagram.com/cog1to/">
               <Button variant="default" className="w-[110px]">
                 COGITO
               </Button>
